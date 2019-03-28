@@ -65,6 +65,7 @@ class Song
   end
  
   def save
+    binding.pry
     self.class.all << self
   end
   
