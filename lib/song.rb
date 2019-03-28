@@ -28,12 +28,9 @@ class Song
   def self.find_or_create_by_name(find_this_song)
 
     if self.find_by_name(find_this_song)
-      s = self.new 
-      s.name = find_this_song
-      s.save 
-      s
+     find_by_name
     else
-      find_it
+      
     end
     
   end 
