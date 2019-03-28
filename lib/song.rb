@@ -30,7 +30,7 @@ class Song
   def self.find_or_create_by_name(find_this_song)
 
     if self.find_by_name(find_this_song)
-      binding.pry
+      
      find_by_name(find_this_song)
     else
       create_by_name(find_this_song)
