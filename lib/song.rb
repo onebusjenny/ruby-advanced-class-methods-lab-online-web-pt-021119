@@ -26,8 +26,8 @@ class Song
   end
   
   def self.find_or_create_by_name(find_this_song)
-    find_it = find_by_name
-    if self.find_by_name(string_name)
+
+    if self.find_by_name(find_this_song)
       s = self.new 
       s.name = find_this_song
       s.save 
