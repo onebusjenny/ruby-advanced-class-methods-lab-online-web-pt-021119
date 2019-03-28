@@ -6,6 +6,7 @@ class Song
   
   def self.create 
     s = self.new 
+    binding.pry
     s.save 
     s
   end 
